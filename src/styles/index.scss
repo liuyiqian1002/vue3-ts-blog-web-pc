@@ -1,0 +1,61 @@
+@use "element-plus/theme-chalk/src/dark/css-vars.scss" as *;
+
+@use './transition.scss';
+@use './layout.scss';
+@use './common.scss';
+@use './variable.scss';
+@use './exampleReport.scss';
+
+
+
+@font-face{
+    font-family: 'Alternate';
+    src: url('@/assets/font/DIN Alternate Bold.ttf');
+    //src: url('@/assets/font/douyuFont.eot') format ('embedded-opentype');
+}
+@font-face{
+    font-family: 'douyuZt';
+    src: url('@/assets/font/douyuFont.woff');
+    //src: url('@/assets/font/douyuFont.eot') format ('embedded-opentype');
+}
+//, url('@/assets/font/douyuZg.otf') format('otf')
+
+.centre-top-layout { color: rgb(44,62,80)}
+
+
+.el-message-box {
+    .el-message-box__status.el-message-box-icon--info { color: var(--el-color-primary)}
+    .el-message-box__content{ text-align: left !important; }
+    .el-message-box__btns { justify-content: flex-end !important;}
+}
+.el-message-box--center .el-message-box__title { justify-content: flex-start !important;}
+
+
+//.qwe_el-dialog {
+//    border: 1px solid rgba(108, 128, 151, 0.5);background: rgba(10, 16, 28, 0.4);backdrop-filter: blur(3px);
+//    .el-dialog__title {color: rgba(226, 235, 241, 1);font-size: 16px;font-family: "douyuZt";font-style: oblique;}
+//    .el-dialog__header {padding-bottom: 0;}
+//    .el-dialog__body {padding-top: 0;}
+//    .homeTitle-bot {
+//        height: 2px;background: rgba(31, 158, 204, 0.2);margin-top: 10px;margin-bottom: 20px;
+//        .homeTitle_block {height: 2px;}
+//        .homeTitle_block:nth-child(1) {width: 62px;background: rgba(31, 158, 204, 1);}
+//        .homeTitle_block:nth-child(2) {width: 2px;left: 70px;background: rgba(180, 235, 255, 1);}
+//        .homeTitle_block:nth-child(3) {width: 2px;left: 450px;;background: rgba(180, 235, 255, 1);}
+//        .homeTitle_block:nth-child(4) {width: 17px;right: 60px;background: rgba(255, 147, 42, 0.5);}
+//        .homeTitle_block:nth-child(5) {width: 17px;right: 32px;background: rgba(39, 202, 255, 0.5);}
+//        .homeTitle_block:nth-child(6) {width: 17px;background: rgba(39, 255, 252, 0.5);}
+//    }
+//
+//    .provinceScreen {
+//        // 滚动条样式
+//        .el-scrollbar__bar.is-vertical > div {width: 4px;border-radius: 4px;background: rgba(39, 202, 255, 0.8);}
+//        .el-table {background: rgba(71, 138, 138, 0);}
+//        .el-table tr {background: rgba(10, 16, 28, 0.4);background-color: transparent !important;border: none;}
+//        /**改变表格内行线颜色*/
+//        .el-table td, .el-table th.is-leaf {border-bottom: 1px solid rgba(108, 128, 151, 0.5) !important;}
+//        .el-table--border .el-table__inner-wrapper::after, .el-table--border::after, .el-table--border::before, .el-table__inner-wrapper::before {background: rgba(108, 128, 151, 0.5);}
+//        .el-table td.el-table__cell div {color: rgba(208, 222, 238, 1);}
+//        .el-table--enable-row-transition .el-table__body td, .el-table .cell {font-size: 12px;text-align: center;background-color: transparent !important;}
+//    }
+//}

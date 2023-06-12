@@ -1,0 +1,64 @@
+.report-page {
+	width: 100%;height: 100%;
+	.example-report {
+		width: 100%;
+		.report-content-detail {
+			width: 100%;margin-top: 8px;height: calc(100% - 116px);background-color: #fff;
+			th {text-align: center;height: 25px;width: 80px;font-size: 14px; border: 1px solid #ebeef5; vertical-align: middle; font-weight: normal}
+			td {text-align: center;height: 22px;font-size: 14px;border: 1px solid #ebeef5; vertical-align: middle; font-weight: normal}
+			.bg-green {background: #1ed81ea8;}
+			.bg-yellow {background: #dada12;}
+			.table-wrapper {
+				.daily-table{
+					.form-table {
+						width: 100%;text-align: center;table-layout: fixed;
+						th {border-right: 1px #ccc solid;border-bottom: 1px #ccc solid;background: #fff;}
+						td {border-bottom: 1px #ccc solid;}
+					}
+					.form-table.fixed-thead {
+						padding-right: 17px;
+						.title {height: 40px;line-height: 40px;font-size: 30px;}
+						tr th {height: 30px;font-size: 16px;text-align: center;}
+						.bg-green {background: #1ed81ea8;}
+						.bg-yellow {background: #dada12;}
+					}
+					.form-table.fixed-tfoot {
+						padding-right: 17px;
+						tr td {height: 30px;font-size: 16px;text-align: center;}
+					}
+					
+					.scroll-box {
+						width: 100%;height: 300px;overflow: auto;overflow-x: hidden;
+						tr {
+							width: 100%;height: 30px;line-height: 30px;
+							&:nth-child(odd) td {background-color: #f3f3f3;}
+						}
+						tr td {padding: 5px;}
+					}
+				}
+			}
+			.table-wrapper1 {
+				width: 100%;min-height: 400px;background-color: #fff;border: 1px solid transparent;
+				.daily-table {width: 90%;margin-left: 5%;margin-right: 5%;text-align: center;table-layout: fixed;background: #fff;border: 1px #ccc solid;}
+				.table-bg {
+					width: 100%;background: #fff;border: 1px solid #fff; display: flex;justify-content: center;flex-direction: column;align-items: center;
+					.title {height: 7.5%;font-size: 30px;text-align: center;margin-top: 2%;margin-bottom: 2%;}
+					.daily-content {
+						width: 85%;margin-bottom: 0;margin-top: 0;line-height: normal;
+						.title {height: 40px;line-height: 40px;font-size: 18px;}
+						.subtitle {height: 30px;line-height: 30px;font-size: 14px;}
+						.text-left {text-align: left;}
+						.text-right {text-align: right;}
+					}
+					.daily-tbody {
+						width: 85%;margin: 7.5%;border-collapse: collapse;
+						.title {height: 40px;line-height: 40px;font-size: 18px;}
+						.subtitle {height: 30px;line-height: 30px;font-size: 14px;}
+						.text-left {text-align: left;}
+						.text-right {text-align: right;}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+.form_reset_css {
+  .el-input__wrapper {
+    width: calc(100% - 22px);
+  }
+}
+
+.table-box {
+  //background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0 12px;
+  .ruleForm {
+    flex-shrink: 0;
+    margin: 20px 30px 0;
+    box-sizing: border-box;
+  }
+
+  // el-table 表格样式
+  .el-table {
+    //padding: 20px;
+    // 表格自适应撑满整个页面(设置了 flex:1,页面上表格必须添加 height 属性)
+    flex-shrink: 1;
+
+    .el-table__header {
+      //background-color: red;
+      th {
+        //height: 50px;
+        font-size: 14px;
+        font-weight: bold;
+        //color: rgba(29,33,41,1);
+        //background: rgba(241,241,246,1);
+      }
+    }
+
+    // table 中 image 图片样式
+    .table-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    // 解决 el-table 中 header 文字换行问题
+    .el-table__header .el-table__cell > .cell {
+      white-space: nowrap;
+    }
+
+    //.el-table__row {
+    //  height: 52px;
+    //}
+
+    // 解决表格数据为空时样式不居中问题(仅在element-plus中)
+    .el-table__empty-block {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .table-empty {
+      line-height: 30px;
+    }
+
+    // 解决 keep-alive || 浏览器窗口大小变化 导致 el-table 样式错乱问题（2.1.4会出现问题，升级之后问题已解决）
+    // .el-table__body-wrapper {
+    // 	height: calc(100% - 50px) !important;
+    // }
+    // .el-table__inner-wrapper,
+    // .el-scrollbar__wrap {
+    // 	height: 100% !important;
+    // }
+  }
+  //.el-pagination { padding: 10px 20px;}
+}
+/* 菜单样式调整 */
+#customSidebar {
+  .el-menu-item-group__title { padding: 0}
+}
+
+.app-head-popper {
+  background: #1C213B !important;border: none !important;
+  .menu_content_nav, .menu_content_item_title { color: #fff !important;}
+}
+.app-head-popper[data-popper-placement^=bottom] .el-popper__arrow::before { background: #1C213B; border-color: #1C213B}
+
+
+.tableUserImg { width: 24px; height: 24px;}
+
+.map_content_icon {
+  border-radius: 4px;border: 1px solid rgba(214,214,214,1);background: rgba(255,255,255,1);text-align: center;padding: 0 4px;line-height: 22px;min-width: 100px;
+  .vehicleStatus {
+    font-size: 14px;font-family: "HarmonyOSSansSC";line-height: 22px;color: rgba(0,0,0,0.65);width: 14px;height: 14px; margin-right: 4px;
+  }
+  .yizhuxiao { color: #FF616E}
+}
+
+// table 排序列中居中样式 sortabel-cell-center
+.s-c-c .cell {
+  margin-right: 24px;
+}
